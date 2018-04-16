@@ -15,16 +15,16 @@ let header ={
   ],
   'searchResults':[
     {
-      'text': 'Option1',
-      'value': 'Opt1'
+      'text': 'Services',
+      'value': 'services'
     },
     {
-      'text': 'Option2',
-      'value': 'Opt1'
+      'text': 'Media',
+      'value': 'media'
     },
     {
-      'text': 'Option4',
-      'value': 'Opt3'
+      'text': 'Products',
+      'value': 'products'
     }
   ]
 };
