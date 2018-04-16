@@ -1,3 +1,11 @@
+@import './global/variables';
+
 .left{
     float: left;
+}
+.strong {
+    font-weight: $bold-weight;
+}  
+.text-left{
+    text-align: left;
 }

@@ -1,20 +1,85 @@
-@import './global/color-variables';
+@import './global/variables';
 @import './global/common-styles';
-.ui{
-    &.celled{
-        &.header{
-            margin-top: 0;
-            img{
-                display: inline-block;
-                margin-right: 8px;
+        
+.header{
+    padding: 10px 0;
+    box-shadow: 0px 3px 5px $offWhite;
+    div[class^="col-md"] {
+        border-right: 1px solid $offWhite;
+    }
+    .selection{
+        &.dropdown{
+            border:0;
+            .default{
+                &.text{
+                    color: $primaryColor;
+                    font-weight: $bold-weight;
+                }
             }
-            p{
-                display: inline-block;
-            &.promo{
-                color: $promo-color;
-            }
-                
+            .menu{
+                border-top: 1px solid #96c8da !important;
             }
         }
     }
+    div[class^="col-md"]{
+    &.promo{
+        border: none;
+        a{
+            margin-top:15px;
+        }
+        img{
+            display: inline-block;
+            margin-right: 8px;
+        }
+        p{
+            color: $promoColor;
+            display: inline-block;
+            font-weight: $bold-weight;
+        }
+    }
 }
+    .sign-in{
+        img,p{
+            display: inline-block;
+        }
+        p{
+            color: $primaryColor;
+            font-weight: $bold-weight;
+        }
+    }
+    .sign-in{
+        margin-top:10px;
+    }
+    .cart{
+         background: $cartColor;
+         margin:-10px 0;
+         padding: 20px;
+         img{
+            display: inline-block;
+            margin-right: 8px;
+        }
+                p{
+                    color: $White;
+                    display: inline-block;
+                }
+            }
+    input{
+        width: -webkit-fill-available;
+        margin-top: 15px;
+    }
+    ul{
+        padding: 10px;
+        border: 1px solid $offWhite;
+        box-shadow: 1px 1px 2px $offWhite;
+        font-weight: $bold-weight;
+        color: #545454;
+        position: absolute;
+        background: $White;
+        width: -webkit-fill-available;
+
+        li{
+            list-style-type: none;
+            text-align: left;
+        }
+    }
+        }

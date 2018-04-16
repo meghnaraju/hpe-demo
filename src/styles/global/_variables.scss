@@ -1,35 +1,11 @@
-// Font Families
-@include font-face('Gotham-Light');
-@include font-face('Gotham-Book');
-@include font-face('Gotham-Medium');
-@include font-face('Gotham-Bold');
-
-// Font weight
-$font-weight-light: 300;
-$font-weight-book: 400;
-$font-weight-medium: 500;
-//$font-weight-bold: 500;
-
-// Font sizes - 9, 12, 13, 14, 15, 16, 17, 18, 20, 24, 26, 28, 30, 32, 34, 38, 40, 42, 45, 48, 54, 56
-$font-size-max-desktop: 56px;
-$font-size-large: 42px;
-$font-size-max-tab: 40px;
-$font-size-h1: 38px;
-$font-size-max-mobile: 34px;
-$font-size-h2: 30px;
-$font-size-textinput: 26px;
-$font-size-h3: 24px;
-$font-size-h4: 18px;
-$font-size-default: 14px;
-$font-size-h6: 12px;
+$promoColor: #ff8d6d;
+$primaryColor: #000000;
+$cartColor: #425563;
+$White: #ffffff;
+$offWhite: #cccccc;
+$productInfo: #797979;
 
 
-// Responsive break-points
-$desktop-width: 1200px;
-$medium-device-width: 990px;
-$tablet-width: 767px;
-$mobile-width: 480px;
-$min-desktop-width: 1201px;
-$min-medium-device-width: 991px;
-$min-tablet-width: 768px;
-$min-mobile-width: 481px;
+//font-weight
+$bold-weight: 700;
+$normal-weight: 400;
