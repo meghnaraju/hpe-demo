@@ -1,0 +1,12 @@
+//Variables
+@import 'global/palette';
+@import 'global/mixins';
+@import 'global/variables';
+
+// Core
+@import 'global/layout';
+@import 'global/common-styles';
+
+// Common Components
+@import 'components/header';
+@import 'components/footer';

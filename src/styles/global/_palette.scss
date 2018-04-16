@@ -1,0 +1,40 @@
+// Common colours for the application
+$palettes: (
+	black: (
+		base: #000,
+		light: #1d1d1d,
+		dark: #262626 // default font color
+	),
+	white: (
+		base: #fff,
+		//transparent: rgba(255, 255, 255, .2),
+		//opaque: rgba(255, 255, 255, .7),
+		mid: #bbb,
+		dark: #b5b5b5
+	),
+	grey: (
+		light: #f2f2f2,
+		base: #d8d8d8,
+		mid: #b5b5b5,
+		dark: #979797,
+		darkest: #4a4a4a,
+		darker: #5f6a75,
+		striped: #f7f7f7,
+		border: #ddd,
+		glass: #f4f4f4,
+		hover: #666,
+		lightglass:#f3f3f3
+	),
+	shadow: (
+		base: #bfbfbf,
+		//dark: rgba(62, 62, 62, .3)
+	),
+	error: (
+    base: #f00
+	)
+);
+// scss-lint:enable TrailingSemicolon
+
+@function palette($color, $tone: 'base') {
+  @return map-get(map-get($palettes, $color), $tone);
+}

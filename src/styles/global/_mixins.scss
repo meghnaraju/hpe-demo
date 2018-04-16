@@ -1,0 +1,66 @@
+// Font style mixins
+$font-family-light: 'Gotham A', 'Gotham B';
+$font-family-book: 'Gotham A', 'Gotham B';
+$font-family-medium: 'Gotham A', 'Gotham B';
+$font-family-bold: 'Gotham A', 'Gotham B';
+
+// $font-family-light: 'Gotham-Light';
+// $font-family-book: 'Gotham-Book';
+// $font-family-medium: 'Gotham-Medium';
+// $font-family-bold: 'Gotham-Bold';
+
+@mixin font-face($font-family, $font-style: normal) {
+  @font-face {
+    font-family: $font-family;
+    //src: url('../../fonts/#{$font-family}.ttf') format('truetype');
+  }
+}
+
+// Media queries mixins for responsive design
+@mixin desktop {
+  @media (max-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin desktop-tablet {
+  @media (max-width: #{$medium-device-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+@mixin min-desktop {
+  @media (min-width: #{$min-desktop-width}) {
+    @content;
+  }
+}
+
+@mixin min-desktop-tablet {
+  @media (min-width: #{$min-medium-device-width}) {
+    @content;
+  }
+}
+
+@mixin min-tablet {
+  @media (min-width: #{$min-tablet-width}) {
+    @content;
+  }
+}
+
+@mixin min-mobile {
+  @media (min-width: #{$min-mobile-width}) {
+    @content;
+  }
+}

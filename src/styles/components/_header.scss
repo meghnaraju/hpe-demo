@@ -1,0 +1,19 @@
+//Styles added for Header component
+.ui{
+    &.celled{
+        &.header{
+            margin-top: 0;
+            img{
+                display: inline-block;
+                margin-right: 8px;
+            }
+            p{
+                display: inline-block;
+            &.promo{
+                color: $promo-color;
+            }
+                
+            }
+        }
+    }
+}
